@@ -23,8 +23,8 @@ int max(int a, int b){
 
 cx_float_t cx_mean(cx_int_t a, cx_int_t b){
     cx_float_t avg;
-    avg.re = (a.re + b.re) / 2;
-    avg.imm = (a.imm + b.imm) /2;
+    avg.re = mean(a.re, b.re);
+    avg.imm = mean(a.imm, b.imm);
     return avg;
 }
 
